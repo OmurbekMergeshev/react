@@ -1,9 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background-color: #1f3640;
+  /* min-height: 100vh; */
+  background-color: #192a33;
+
 
 }
 
@@ -39,37 +46,38 @@ ol, ul {
 }
 
 .board-row:after {
-  clear: borh;
+  clear: both;
   content: '';
   display: table;
 }
 
 .status {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  border-radius: 1rem;
-  border: 20px solid #87aec7;
-  background-color: #87aec7;
+  font-size: 4rem;
+  color: #fff;
 
 
 }
 
-.squaere {
-  background: #ccc;
-  border: 3px solid #192a33;
+.square {
+  background: #1f3640;
+  border: 5px;
   float: left;
-  font-size: 24px;
+  font-size: 80px;
   font-weight: bold;
   line-height: 34px;
   height: 150px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 5;
+  margin-right: 12px;
+  margin-top: 11px;
+  margin: 15px;
+  border-radius: 20px;
   text-align: center;
   width: 150px;
+  background-color: var(--color-bg-light);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .square:focus {
@@ -81,7 +89,9 @@ ol, ul {
 
 .game{
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
 }
 
 .game-info {
